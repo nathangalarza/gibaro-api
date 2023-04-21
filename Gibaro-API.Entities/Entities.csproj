@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\Document.cs~RFefec121.TMP" />
+    <None Remove="Models\Document.cs~RFf04385c.TMP" />
+    <None Remove="Models\Document.cs~RFf04e035.TMP" />
+    <None Remove="Models\Document.cs~RFf203c7b.TMP" />
+    <None Remove="Models\Pet.cs~RF9cbe2cc.TMP" />
+    <None Remove="Models\Pet.cs~RF9d97912.TMP" />
+    <None Remove="Models\Pet.cs~RFf109288.TMP" />
+    <None Remove="Models\Pet.cs~RFf10b8ec.TMP" />
+    <None Remove="Models\Pet.cs~RFf11c55b.TMP" />
+    <None Remove="Models\Test.cs~RF4719ade.TMP" />
+    <None Remove="Models\Test.cs~RF4b452e2.TMP" />
+    <None Remove="Models\User.cs~RF9cca0ad.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+</Project>
