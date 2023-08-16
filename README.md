@@ -8,7 +8,8 @@ This API is built using .NET Core and follows a clean architecture with a focus 
 - Entity Framework Core
 - Repository Pattern
 - Service Layer
-
+- Code Generation
+  
 ## Getting Started
 
 ### Prerequisites
@@ -29,6 +30,9 @@ The service layer encapsulates the business logic and provides a clear API to th
 
 ### Entity Framework Core
 Entity Framework Core is used for database interactions, enabling smooth CRUD operations with the database using LINQ queries.
+
+### Code Generation
+To expedite the development process, I have implemented code generation. This automation tool aids in creating the necessary layers mentioned above, ensuring consistency and saving time. Although it currently needs some refinements to improve aesthetics and readability, it's a vital part of our workflow.
 
 ## API Documentation
 Detailed API documentation is available at /swagger.
