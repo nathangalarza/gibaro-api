@@ -69,8 +69,6 @@ namespace Gibaro_API.Extensions
             var jwtConfiguration = new JwtConfiguration();
             configuration.Bind(jwtConfiguration.Section, jwtConfiguration);
 
-            var secretKey = "kibd&2m9cp*56f8i&^+wp8s6ei5pgl0#yihzxk6u4#po6=fze5";
-
             services.AddAuthentication(opt =>
             {
                 opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -88,8 +86,8 @@ namespace Gibaro_API.Extensions
                     ValidAudience = jwtConfiguration.ValidAudience,
                 };
 
-                if (secretKey != null)
-                    options.TokenValidationParameters.IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
+                if (jwtConfiguration.SecretKey != null)
+                    options.TokenValidationParameters.IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtConfiguration.SecretKey));
             });
         }
 

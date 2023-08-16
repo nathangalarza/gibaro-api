@@ -30,19 +30,5 @@ namespace Presentation.Controllers
             _service.AuthenticationService.RefreshToken(tokenDto);
             return Ok(tokenDtoToReturn);
         }
-
-        //[HttpGet("verify-email")]
-        //public async Task<IActionResult> VerifyEmail(string userId, string token, string? email)
-        //{
-        //    await _service.AuthenticationService.VerifyEmail(userId, token, email);
-        //    return NoContent();
-        //}
-
-        //[HttpGet("verify-phone")]
-        //public async Task<IActionResult> VerifyPhone(string userId, string token)
-        //{
-        //    await _service.AuthenticationService.VerifyPhoneNumber(userId, token);
-        //    return NoContent();
-        //}
     }
 }
