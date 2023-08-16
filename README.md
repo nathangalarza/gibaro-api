@@ -35,5 +35,6 @@ Detailed API documentation is available at /swagger.
 
 ## Contact
 Nathan J. Galarza - nathanjavier0917@gmail.com
+LinkedIn: https://www.linkedin.com/in/nathan-galarza-916470149/
 
 
